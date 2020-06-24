@@ -8,7 +8,7 @@ very simple
 
 ```swift
 for i in 0...1000 {
-  SFDispatchQueuePool.shared.async {
+  SFDispatchQueuePool.pool.async {
     NSLog("task: \(i), enter queue")
 
     let lock = DispatchSemaphore(value: 0)
